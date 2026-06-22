@@ -1,0 +1,23 @@
+# Obsidian local state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/plugins/*/data.json
+
+# Private and sensitive material
+08_Private/*
+!08_Private/README.md
+02_Sources/Raw Exports/
+02_Sources/**/exports/
+
+# Generated and local clutter
+outputs/
+.DS_Store
+Thumbs.db
+.trash/
+*.tmp
+*.temp
+*.bak
+.env
+.env.*
+!.env.example

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Initialize Second Brain"
+  short_description: "Guided setup for a new personal knowledge base"
+  default_prompt: "Use $init to guide me through setting up this second brain."

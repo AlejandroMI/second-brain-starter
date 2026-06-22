@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maya Chen CV</title>
+  <style>
+    @page {
+      size: Letter;
+      margin: 0.54in 0.58in 0.5in;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #202326;
+      background: #ffffff;
+      font: 10.8px/1.38 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: #1f5f66;
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+      margin: 0;
+    }
+
+    .page {
+      max-width: 100%;
+    }
+
+    .hero {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: 23px;
+      line-height: 1.05;
+      font-weight: 720;
+      color: #111315;
+    }
+
+    .contact {
+      display: flex;
+      gap: 18px;
+      padding-top: 4px;
+      white-space: nowrap;
+      font-size: 10.2px;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      gap: 34px;
+      margin-bottom: 34px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e4e8e7;
+    }
+
+    .fact {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .fact-label,
+    .dates {
+      color: #6d7477;
+      font-weight: 620;
+    }
+
+    .fact-value {
+      color: #2f3437;
+    }
+
+    .profile-statement h2 {
+      margin-bottom: 4px;
+      font-size: 11.3px;
+      color: #1e3437;
+    }
+
+    .profile-statement p {
+      color: #30383b;
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    .section > h2 {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.15;
+      color: #111315;
+    }
+
+    .entry {
+      break-inside: avoid;
+      margin-bottom: 17px;
+    }
+
+    .entry-heading {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: baseline;
+      gap: 18px;
+      margin-bottom: 2px;
+    }
+
+    .entry h3 {
+      font-size: 12px;
+      line-height: 1.28;
+      font-weight: 700;
+      color: #151819;
+    }
+
+    .description {
+      margin-top: 2px;
+      color: #3f4548;
+    }
+
+    .domains {
+      margin-top: 3px;
+      color: #566063;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 8px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .chips li {
+      padding: 2.5px 7px 3px;
+      border-radius: 4px;
+      background: #edf3f2;
+      color: #243b3f;
+      font-size: 9.6px;
+      line-height: 1.2;
+    }
+
+    .bullets {
+      margin-top: 8px;
+      padding-left: 14px;
+    }
+
+    .bullets li {
+      margin-bottom: 3.2px;
+      padding-left: 2px;
+    }
+
+    .education {
+      margin-bottom: 18px;
+    }
+
+    .compact-section {
+      break-inside: avoid;
+    }
+
+    .more-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px 34px;
+    }
+
+    .more-grid h3 {
+      margin-bottom: 3px;
+      font-size: 11.5px;
+      color: #151819;
+    }
+
+    .more-grid p {
+      color: #30383b;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>Maya Chen</h1>
+      <nav class="contact">
+
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+        <a href="https://example.com/maya">My website</a>
+      </nav>
+    </header>
+
+    <section class="profile-grid" aria-label="Profile summary">
+      <div class="profile-facts">
+
+          <div class="fact">
+            <div class="fact-label">Current role</div>
+            <div class="fact-value">Product Operations Lead at Northstar Tools</div>
+          </div>
+          <div class="fact">
+            <div class="fact-label">Experience</div>
+            <div class="fact-value">Product operations, customer research, process design, documentation, planning, and facilitation</div>
+          </div>
+          <div class="fact">
+            <div class="fact-label">Technologies</div>
+            <div class="fact-value">Notion, Airtable, Linear, SQL</div>
+          </div>
+      </div>
+
+        <aside class="profile-statement">
+          <h2>I want to work for a company that...</h2>
+          <p>Values calm systems, close customer contact, and practical collaboration across product, operations, support, and sales.</p>
+        </aside>
+    </section>
+
+    <section class="section">
+      <h2>Work experience</h2>
+      <article class="entry">
+    <div class="entry-heading">
+      <h3>Product Operations Lead, <a href="https://example.com/northstar">Northstar Tools</a></h3>
+      <div class="dates">Mar 2023 - Present</div>
+    </div>
+    <p class="description">Fictional collaboration software company</p>
+    <p class="domains">Product Operations · B2B · Customer Research · Collaboration</p>
+    <ul class="chips"><li>Notion</li><li>Airtable</li><li>Linear</li><li>SQL</li></ul>
+    <ul class="bullets"><li>Introduced a weekly customer-feedback review shared by product, support, and sales.</li><li>Consolidated four request trackers into one documented intake workflow.</li><li>Reduced median internal request-triage time from 6 days to 2 days over two quarters.</li><li>Facilitated quarterly planning for a 14-person product and engineering group.</li><li>Defined a shared tagging model for interview notes, support themes, and feature requests, then trained 12 colleagues to use it.</li></ul>
+  </article><article class="entry">
+    <div class="entry-heading">
+      <h3>Operations Associate, <a href="https://example.com/common-thread">Common Thread Studio</a></h3>
+      <div class="dates">Jul 2020 - Feb 2023</div>
+    </div>
+    <p class="description">Fictional digital product studio</p>
+    <p class="domains">Operations · Research Operations · Digital Products</p>
+    <ul class="chips"><li>Notion</li><li>Airtable</li></ul>
+    <ul class="bullets"><li>Documented onboarding and delivery workflows for a digital studio.</li><li>Coordinated research scheduling for 18 client discovery projects.</li><li>Built a lightweight project-health dashboard used in weekly leadership reviews.</li></ul>
+  </article>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <article class="entry education">
+    <div class="entry-heading">
+      <h3><a href="https://example.com/westborough">Westborough University</a></h3>
+      <div class="dates">2017 - 2020</div>
+    </div>
+    <p class="description">BSc, Information Management</p>
+    <ul class="bullets"><li>Studied information systems, organizational knowledge, and service design.</li></ul>
+  </article>
+    </section>
+
+    <section class="section compact-section">
+      <h2>More about me</h2>
+      <div class="more-grid">
+
+          <div>
+            <h3>At work I&#39;m best at...</h3>
+            <p>Turning scattered knowledge and ambiguous processes into a shared system a small team can actually maintain.</p>
+          </div>
+          <div>
+            <h3>Interests</h3>
+            <p>Community learning, independent bookshops, urban walking, and ceramics.</p>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <p>English (fluent), Mandarin (conversational)</p>
+          </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

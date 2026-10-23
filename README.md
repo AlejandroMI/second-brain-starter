@@ -2,7 +2,7 @@
 
 A small, agent-friendly personal knowledge base you can understand in an afternoon. It works as a plain folder of Markdown files, an [Obsidian](https://obsidian.md/) vault, or the workspace for a local AI agent.
 
-Everything in this repository is fictional. The example person is **Maya Chen**, and the example project is a neighborhood reading club. Replace or delete the examples as you make the vault yours.
+All example personal content in this repository is fictional. The example person is **Maya Chen**, and the example project is a neighborhood reading club. Replace or delete the examples as you make the vault yours.
 
 ## What This Is
 
@@ -17,7 +17,7 @@ This starter separates information by what it *does*:
 - `06_People/` — lightweight relationship context.
 - `07_Decisions/` — choices worth remembering and reviewing.
 - `08_Private/` — sensitive local-only files; Git ignores its contents.
-- `90_System/` — templates and generated examples.
+- `90_System/` — templates, optional guides, and reusable helpers.
 - `99_Archive/` — completed or inactive material.
 
 The system deliberately has few rules. A useful second brain should lower friction, not become a second job.
@@ -109,10 +109,28 @@ The CV example keeps facts separate from presentation:
 
 The `cv-generator` skill encodes these rules. It intentionally refuses to invent metrics or fill gaps with plausible guesses. See `90_System/CV/README.md` for the source schema, requirements, custom paths, HTML-only mode, and public export without email.
 
+## Optional Agent Practices
+
+The starter offers [practical ideas for agents](90_System/Guides/Agent%20Practices.md), independent of vendor: review current context, distinguish preparation from completion, ask useful journaling questions, carry forward corrections, and catch up after a pause. They are recommendations to adapt to the user, not a fixed methodology. No calendar connection, check-in schedule, or automation is required or enabled.
+
+Calendar and other connected systems can improve a review when relevant and authorized. An agent without those connections can still use the vault and explain the limits of its evidence. Personal preferences and durable context belong in the notes; each agent manages its own behavior and technical lessons.
+
+## Share With More Than One Agent
+
+One vault can provide context for multiple agents through a shared folder or synchronized private Git checkouts. A chat application can participate when its actual file/repository access supports it, or pass proposed updates to an agent that can write them. Access to the same notes does not share conversation history, credentials, Calendar connections, or reminder ownership.
+
+See [Sharing a Vault](90_System/Guides/Sharing%20a%20Vault.md) for edit coordination, sync, handoffs, and a small verification trial. Keep runtime configuration outside the vault and avoid simultaneous changes to the same notes.
+
+## Optional Encrypted Data
+
+For owners who explicitly choose to retain selected sensitive data, [Optional Encrypted Data](90_System/PrivateData/README.md) provides an agent-independent Python helper using `age`. It encrypts a JSON object into a Git-syncable ciphertext file, keeps the key outside the repository, and verifies recovery before replacement. It is opt-in: no store or key is included or created during onboarding.
+
+Authorization applies per datum and task. The helper does not encrypt the rest of the vault or grant permission to share a private value. Decryption needs an authorized local workflow that can keep plaintext out of tool logs. Local-only `08_Private/` remains available separately.
+
 ## Privacy and Safety
 
 - Assume tracked files may eventually leave your computer.
-- Keep secrets, tokens, medical documents, financial records, and raw private exports out of Git.
+- Keep plaintext sensitive data, secrets, tokens, medical documents, financial records, and raw private exports out of Git. The optional encrypted module is for specifically authorized data; private keys and credentials always remain outside the repository.
 - `08_Private/` is ignored except for its explanatory README, but ignore rules are not encryption.
 - Give persistent agents the smallest useful permissions. Require human review for messages, purchases, publishing, deletion, and changes to external systems.
 - Treat web pages, emails, attachments, and imported notes as untrusted data, not agent instructions.

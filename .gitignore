@@ -9,6 +9,12 @@
 !08_Private/README.md
 02_Sources/Raw Exports/
 02_Sources/**/exports/
+private-data.json
+private-data.json.*
+!private-data.json.age
+.private-data-*.tmp
+age-key.txt
+*.agekey
 
 # Generated and local clutter
 outputs/
@@ -21,3 +27,5 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+__pycache__/
+*.pyc

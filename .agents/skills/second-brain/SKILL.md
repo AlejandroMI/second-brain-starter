@@ -21,6 +21,12 @@ Read `{baseDir}/../../../AGENTS.md`, `{baseDir}/../../../README.md`, and `{baseD
 6. Update `Home.md` only when the user's current focus actually changes.
 7. Summarize edits and mention any assumptions.
 
+## Optional Approaches
+
+For review, reflection, follow-up, or catch-up requests, consult [Agent Practices](../../../90_System/Guides/Agent%20Practices.md) when helpful. Adapt the approach to the user and available evidence; a simple capture does not need a review or questionnaire. Do not install routines or require Calendar access as part of this skill.
+
+If several agents share the vault, [Sharing a Vault](../../../90_System/Guides/Sharing%20a%20Vault.md) covers access and edit coordination. For explicitly requested sensitive-data storage or retrieval, consult [Optional Encrypted Data](../../../90_System/PrivateData/README.md) before accessing a store. These references do not grant access or authorization.
+
 ## Guardrails
 
 - Do not access `08_Private/` without explicit scope.
